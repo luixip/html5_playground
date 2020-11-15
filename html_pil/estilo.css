@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body{
+}
+
+#cabecera{
+    background: red;
+    border: 1em;
+    border-color: black;
+}
+
+#navegacionprincipal{
+    background: yellow;
+}
+
+#baralateral{
+    color:green
+}
+
+#contenidoprincipal{
+
+}
+
+#pieprincipal{
+    
+}
