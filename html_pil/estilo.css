@@ -1,26 +1,51 @@
 @charset "utf-8";
+/* CC Document*/
 
-body{
-}
-
-#cabecera{
-    background: red;
-    border: 1em;
-    border-color: black;
+#cabeceraweb{
+    background-color: blue;
+    
 }
 
 #navegacionprincipal{
-    background: yellow;
+    background-color: red;
 }
 
 #baralateral{
-    color:green
+    background-color: green;
+    float: left;
+    height: 1137px;
 }
 
 #contenidoprincipal{
-
+    background-color:violet;
+    margin-left:160px;
+    padding-left:15px;
+    padding-top:15px;
 }
 
 #pieprincipal{
-    
+    background-color: darkorange;
+    clear: both;
+    margin-top: 150px;
+}
+
+li{
+    background-color: cadetblue;
+    display: inline;
+}
+/*
+p:nth-child(2){
+    color:red;
+}
+*/
+p:first-child{
+    color: green;
+}
+
+p:last-child{
+    color: blue;
+}
+
+p:only-child{
+    color:yellow;
 }
