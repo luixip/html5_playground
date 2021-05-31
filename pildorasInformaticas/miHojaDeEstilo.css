@@ -13,22 +13,35 @@ header{
 }
 
 #navegacionprincipal{
-    background-color: #F00;
+    background-color: #123;
 }
 
-#baralateral{
-    background:#0F0 ;
+#barralateral{
+    background-color:#0F0 ;
+    float:left;
+    height: 1170px;
 }
 
 #contenidoprincipal{
     background-color: #606;
+    margin-left: 200px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 #pieprincipal{
     background-color: yellow;
+    clear: both;
+    margin-top: 20px;
 }
 
 footer{
     background-color: bisque;
 }
+
+li{
+    background-color:#ff0;
+    display: inline;
+}
+
 
