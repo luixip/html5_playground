@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color:blue;
+    color: brown;
+}
+header{
+    background-color: red;
+}
+#cabeceraweb{
+    background-color: aquamarine;
+}
+
+#navegacionprincipal{
+    background-color: #F00;
+}
+
+#baralateral{
+    background:#0F0 ;
+}
+
+#contenidoprincipal{
+    background-color: #606;
+}
+
+#pieprincipal{
+    background-color: yellow;
+}
+
+footer{
+    background-color: bisque;
+}
+
