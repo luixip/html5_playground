@@ -19,5 +19,4 @@ function ejecuta2() {
     var z = (document.getElementsByClassName("importante")[i].onclick = saludo);
   }
 }
-
 window.onload = ejecuta2;
