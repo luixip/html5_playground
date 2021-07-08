@@ -14,9 +14,18 @@ function ejecuta() {
 }
 
 function ejecuta2() {
-  tope = document.getElementsByClassName("importante").length;
+  var tope = document.getElementsByClassName("importante").length;
   for (var i = 0; i < tope; i++) {
     var z = (document.getElementsByClassName("importante")[i].onclick = saludo);
   }
 }
-window.onload = ejecuta2;
+
+function ejecuta3() {
+  /*  document.querySelector("#principal p:last-child").onclick = saludo; */
+
+  var elementos = document.querySelectorAll("#principal p");
+  for (var i = 0; i < elementos.length; i++) {
+    elementos[i].onclick = saludo;
+  }
+}
+window.onload = ejecuta3;
