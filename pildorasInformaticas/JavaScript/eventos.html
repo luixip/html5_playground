@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var imagen;
+
+      function crecer() {
+        imagen.width = 255;
+        imagen.height = 355;
+      }
+
+      function decrecer() {
+        imagen.width = 200;
+        imagen.height = 300;
+      }
+
+      function tipoGato() {
+        alert("Paco");
+      }
+
+      function manejaGato() {
+        /*document.getElementsByTagName("img")[0].onclick = tipoGato;*/ arguments;
+        imagen = document.getElementsByTagName("img")[0];
+        imagen.addEventListener("mouseover", crecer, false);
+        imagen.addEventListener("mouseout", decrecer, false);
+        imagen.addEventListener("click", tipoGato, false);
+      }
+
+      window.onload = manejaGato;
+    </script>
+  </head>
+  <body>
+    <p>
+      <img width="200" height="300" src="../imagenes/paco.jpeg" />
+    </p>
+  </body>
+</html>
