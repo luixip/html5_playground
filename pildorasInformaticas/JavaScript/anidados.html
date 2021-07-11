@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function losEventos() {
+        var elemento1 = document.getElementsByTagName("p")[0];
+        var elemento2 = document.getElementsByTagName("img")[0];
+        elemento1.addEventListener("click", aviso1, true);
+        elemento2.addEventListener("click", aviso2, false);
+      }
+      function aviso1() {
+        alert("Soy el párrafo");
+      }
+
+      function aviso2() {
+        alert("Soy la imagen");
+      }
+
+      window.addEventListener("load", losEventos, false);
+    </script>
+  </head>
+  <body>
+    <p><img src="../imagenes/luna.jpg" width="200" height="300" /></p>
+  </body>
+</html>
