@@ -1,162 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <form>
-      <label for="nombre">Nombre: </label>
-      <input id="nombre" type="text" />
-      <input type="date" />
-      <input type="time" />
-      <input type="month" />
-      <input type="week" />
-      <div>
-        <label>
-          Search
-          <input type="search" />
-        </label>
-      </div>
-      <div>
-        <label>
-          Teléfono
-          <input type="tel" />
-        </label>
-      </div>
-      <div>
-        <label>
-          email
-          <input type="email" />
-        </label>
-      </div>
-      <div>
-        <label>
-          password
-          <input type="password" />
-        </label>
-      </div>
-      <div>
-        <label>
-          url
-          <input type="url" />
-        </label>
-      </div>
-
-      <div>
-        <label>
-          color
-          <input type="color" />
-        </label>
-      </div>
-
-      <div>
-        <label>
-          number
-          <input type="number" />
-        </label>
-      </div>
-
-      <div>
-        <label>
-          range
-          <input type="range" step="2" min="0" max="20" />
-        </label>
-      </div>
-
-      <div>
-        <label>
-          text
-          <input type="text" />
-        </label>
-      </div>
-
-      <div>
-        <h2>Género</h2>
-        <label
-          >Maculino
-          <input type="radio" name="gender" />
-        </label>
-        <label
-          >Femenino
-          <input type="radio" name="gender" />
-        </label>
-      </div>
-
-      <div>
-        <h2>Lista de chequeo</h2>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" />
+        <input type="date" />
+        <input type="time" />
+        <input type="month" />
+        <input type="week" />
         <div>
-          <label
-            >Opción 1
-            <input type="checkbox" />
-          </label>
+            <label>
+                Search
+                <input type="search" />
+            </label>
         </div>
         <div>
-          <label
-            >Opción 2
-            <input type="checkbox" />
-          </label>
+            <label>
+                Teléfono
+                <input type="tel" />
+            </label>
         </div>
         <div>
-          <label
-            >Opción 3
-            <input type="checkbox" />
-          </label>
+            <label>
+                email
+                <input type="email" />
+            </label>
         </div>
         <div>
-          <label
-            >Opción 4
-            <input type="checkbox" />
-          </label>
+            <label>
+                password
+                <input type="password" />
+            </label>
         </div>
-      </div>
+        <div>
+            <label>
+                url
+                <input type="url" />
+            </label>
+        </div>
 
-      <div>
-          <h2>Etiquetas SELECT</h2>
-          <Label>Seleccionar:
-              <select name="lenguajes" >
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">JavaScrip</option>
-                <option value="php">PHP</option>
-            </select>
-          </Label>
-      </div>
+        <div>
+            <label>
+                color
+                <input type="color" />
+            </label>
+        </div>
 
-      <div>
-          <label> Mascotas:
-              <select name="mascotas" id="">
-                  <optgroup label="4 patas">
+        <div>
+            <label>
+                number
+                <input type="number" />
+            </label>
+        </div>
+
+        <div>
+            <label>
+                range
+                <input type="range" step="2" min="0" max="20" />
+            </label>
+        </div>
+
+        <div>
+            <label>
+                text
+                <input type="text" />
+            </label>
+        </div>
+
+        <div>
+            <h2>Género</h2>
+            <label>
+                Maculino
+                <input type="radio" name="gender" />
+            </label>
+            <label>
+                Femenino
+                <input type="radio" name="gender" />
+            </label>
+        </div>
+
+        <div>
+            <h2>Lista de chequeo</h2>
+            <div>
+                <label>
+                    Opción 1
+                    <input type="checkbox" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Opción 2
+                    <input type="checkbox" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Opción 3
+                    <input type="checkbox" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Opción 4
+                    <input type="checkbox" />
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <h2>Etiquetas SELECT</h2>
+            <label>
+                Seleccionar:
+                <select name="lenguajes">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScrip</option>
+                    <option value="php">PHP</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Mascotas:
+                <select name="mascotas" id="">
+                    <optgroup label="4 patas">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="conejo">Conejo</option>
+                    </optgroup>
+                    <optgroup label="aves">
+                        <option value="loro">Loro</option>
+                        <option value="canario">Canario</option>
+                    </optgroup>
+                    <optgroup label="otras">
+                        <option value="serpiente">Serpiente</option>
+                        <option value="tarantula">Tarantula</option>
+                        <option></option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <h1>Elementos seleccionables</h1>
+            <label>
+                Elementos:
+                <input type="list" list="pets" />
+                <datalist id="pets">
                     <option value="perro">Perro</option>
                     <option value="gato">Gato</option>
                     <option value="hamster">Hamster</option>
                     <option value="conejo">Conejo</option>
-    
-                  </optgroup>
-                  <optgroup label="aves">
                     <option value="loro">Loro</option>
-                    <option value="canario">Canario</option>    
-                  </optgroup>
-                  <optgroup label="otras">
-                    <option value="serpiente">Serpiente</option>
-                    <option value="tarantula">Tarantula<option>                          
-                  </optgroup>
-            </select>
-          </label>
+                    <option value="canario">Canario</option>
+                </datalist>
+            </label>
+        </div>
 
-      </div>
 
-      <div>
-        <label>
-          reset
-          <input type="reset" />
-        </label>
-      </div>
-      <div>
-        <button>Enviar</button>
-      </div>
+        <div>
+            <label>
+                reset
+                <input type="reset" />
+            </label>
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
     </form>
-  </body>
+</body>
+
 </html>
