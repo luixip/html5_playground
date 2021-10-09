@@ -11,10 +11,15 @@
 <body>
     <section>
         <form name="miFormulario" id="miFormulario" method="get" autocomplete="off">
-            Email:&nbsp;<input type="email" name="email" id="email"><br>
+            Email:&nbsp;<input type="email" name="email" id="email" required><br>
             Buscar:&nbsp; <input type="search" name="buscar" id="buscar"><br>
             URL: &nbsp;<input type="url">
-            Número: &nbsp; <input type="number" name="edad" id="edad" min="1" max="110">
+            Número: &nbsp; <input type="number" name="edad" id="edad" min="0" max="110" step="5"
+                placeholder="Múltiplos de cinco">
+            Edad: &nbsp; <input type="range" name="edad" id="edad" min="5" max="105"><br>
+            C. Postal: &nbsp; <input pattern="[0-9]{5}" name="cpostal" id="cpostal" placeholder="5 dígitos"><br>
+
+
 
             <input type="submit" value="Enviar">
 
