@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            text-align: left;
+            background-color: #F96;
+            width: 25%;
+            margin: auto;
+            border: 2px #F30 dashed;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+    <script>
+        var edad;
+
+        function comenzar() {
+            edad = document.getElementById("edad");
+            edad.addEventListener("change", cambiaRango, false);
+            document.datosUsuario.addEventListener("invalid", validar, true);
+            document.getElementById("enviar").addEventListener("click", enviar, false);
+        }
+
+        function cambiaRango() {
+            var salida = document.getElementById("rango");
+            var calculo = edad.value - 30;
+
+            if (calculo < 30) {
+                calculo = 0;
+                edad.value = 30;
+            }
+            salida.innerHTML = calculo + " a " + edad.value;
+        }
+
+        function validar(e) {
+            var elemento = t.target;
+            elemento.style.background = "#";
+        }
+
+        function enviar() {
+
+        }
+
+
+        window.addEventListener("load", comenzar, false);
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="datosUsuario" method="gest">
+        <table>
+            <tr>
+                <td>usuario</td>
+                <td><input pattern="[a-zA-Z]{3}" name="usuario" id="usuario" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td><input type="range" name="edad" id="edad" min="0" max="120" value="30" step="30"></td>
+            </tr>
+            <tr>
+                <td>
+                    <output id="rango" step="30">0 a 30</output>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="enviar" value="Registrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
