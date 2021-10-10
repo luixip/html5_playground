@@ -26,6 +26,8 @@
             edad.addEventListener("change", cambiaRango, false);
             document.datosUsuario.addEventListener("invalid", validar, true);
             document.getElementById("enviar").addEventListener("click", enviar, false);
+
+            document.datosUsuario.addEventListener("input",validarTiempoReal,false);
         }
 
         function cambiaRango() {
@@ -40,12 +42,25 @@
         }
 
         function validar(e) {
-            var elemento = t.target;
-            elemento.style.background = "#";
+            var elemento = e.target;
+            elemento.style.background = "#FFDDDD";
+        }
+
+        function validarTiempoReal (e){
+            var elemento = e.target;
+            if(elemento.validity.valid == true){
+                elemento.style.background = "#FFFFFF";
+            }else{
+                elemento.style.background = "#FFDDDD";
+            }
         }
 
         function enviar() {
+            var correcto = document.datosUsuario.checkValidity();
 
+            if (correcto == true){
+                document.datosUsuario.submit();
+            }
         }
 
 
