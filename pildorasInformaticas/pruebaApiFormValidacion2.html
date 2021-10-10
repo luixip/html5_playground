@@ -27,7 +27,7 @@
             document.datosUsuario.addEventListener("invalid", validar, true);
             document.getElementById("enviar").addEventListener("click", enviar, false);
 
-            document.datosUsuario.addEventListener("input",validarTiempoReal,false);
+            document.datosUsuario.addEventListener("input", validarTiempoReal, false);
         }
 
         function cambiaRango() {
@@ -46,20 +46,24 @@
             elemento.style.background = "#FFDDDD";
         }
 
-        function validarTiempoReal (e){
+        function validarTiempoReal(e) {
             var elemento = e.target;
-            if(elemento.validity.valid == true){
+            if (elemento.validity.valid == true) {
                 elemento.style.background = "#FFFFFF";
-            }else{
+            } else {
                 elemento.style.background = "#FFDDDD";
             }
         }
 
         function enviar() {
+            var cuadroUsuario = document.getElementById("usuario");
+
             var correcto = document.datosUsuario.checkValidity();
 
-            if (correcto == true){
+            if (correcto == true) {
                 document.datosUsuario.submit();
+            } else if (cuadroUsuario.validity.valueMissing == true || cuadroUsuario.validity.patternMismatch == true) {
+                alert("El usuario no puede estar vacio y debe tener 3 letras");
             }
         }
 
