@@ -22,6 +22,11 @@ header {
   height: 800px;
 }
 
+li {
+  background-color: #ff0;
+  display: inline;
+}
+
 #contenidoprincipal {
   background-color: #606;
   margin-left: 200px;
@@ -29,7 +34,7 @@ header {
   padding-top: 15px;
 }
 
-#pieprincipal {
+#piepaginaprincipal {
   background-color: yellow;
   clear: both;
   margin-top: 20px;
@@ -37,9 +42,4 @@ header {
 
 footer {
   background-color: bisque;
-}
-
-li {
-  background-color: #ff0;
-  display: inline;
 }
