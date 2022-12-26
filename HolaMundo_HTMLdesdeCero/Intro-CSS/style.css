@@ -1,79 +1,66 @@
-/* 
-El asterisco es un selector universal que aplica a las propiedades que no han sido asignadas antes a ningún otro selector
-
-#titulo {
-  color: tomato;
+html {
+  font-family: "Montserrat", sans-serif;
 }
 
-p.texto {
-  color: slateblue;
+body {
+  margin: 0;
+  background-color: #efefef;
 }
 
-p.especial {
-  color: mediumseagreen;
+header {
+  background-color: #364552;
+  color: white;
+  padding: 3rem 2rem;
 }
 
-div p {
-  color: aquamarine;
+header h1 {
+  font-size: 4rem;
+  text-align: center;
 }
 
-div h2,
-div h3 {
-  color: brown;
+.container {
+  width: 400px;
+  margin: 0 auto;
 }
 
-* {
-  font-size: 24px;
-  color: black;
+section article {
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
 }
 
-.color {
-  color: rgb(255, 0, 0);
+section article:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
-*/
-
-.color {
-  /* border: 5px rgb(77, 8, 8) inset; */
-
-  /*
-  dotted
-  dashed
-  solid
-  double
-  groove
-  ridge
-  inset
-  outset
-  none
-  hidden
-  */
-  border-style: solid;
-  border-color: blue;
-  border-radius: 5px;
-  border-width: 2rem;
-}
-* {
-  font-size: 24px;
+section article h2,
+section article p {
+  margin: 1rem;
 }
 
-#fondo {
-  background-color: rgba(255, 0, 0);
-  /* opacity: 0.3;*/
-  height: 300px;
-  background-image: url("ruta.png");
-  /* background-size: 100px 100px; */
-  background-repeat: repeat-y;
-  background-position: center bottom;
-
-  background: #f00 url("ruta.png") repeat-y center bottom / 100px 100px;
+footer {
+  background-color: #222;
+  padding: 3rem;
+  color: white;
 }
 
-.margen {
-  background-color: chocolate;
-  margin: 15px;
-  padding: 30px 15px 5px;
-  border: solid 1px black;
-  height: 200px;
-  width: 50px;
+footer section {
+  float: right;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: cornflowerblue;
 }
